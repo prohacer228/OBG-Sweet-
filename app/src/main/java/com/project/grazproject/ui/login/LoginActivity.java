@@ -37,6 +37,7 @@ public class LoginActivity extends AppCompatActivity {
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
+    //TODO : добавить возможность скрывать и показывать пароль
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,11 +52,9 @@ public class LoginActivity extends AppCompatActivity {
         final EditText usernameEditText = binding.username;
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
-        final Button registerButton = binding.registerButtonLog;
+        final Button registerButtonLog = binding.registerButtonLog;
         final ProgressBar loadingProgressBar = binding.loading;
-       final TextView forgotPassword = binding.forgotPassword;
-
-      //  forgotPassword = findViewById(R.id.forgotPassword);
+        final TextView forgotPassword = findViewById(R.id.forgotPassword);
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -135,7 +134,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         //Переход на страницу регистрации
-        registerButton.setOnClickListener(new View.OnClickListener() {
+        registerButtonLog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
@@ -143,15 +142,11 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // TODO : сделать переход на экран восстановления пароля. Пока вылетает
-        //go to Reset Password activity
-
        forgotPassword.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
                startActivity(intent);
-
            }
        });
     }

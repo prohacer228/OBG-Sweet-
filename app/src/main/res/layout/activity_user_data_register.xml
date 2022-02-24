@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.UserDataRegister">
+
+    <Button
+        android:id="@+id/saveRegUserData"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userApartRegister"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <EditText
+        android:id="@+id/userSurnameRegister"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/user_surname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDataRegisterTitle"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <EditText
+        android:id="@+id/userTownRegister"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/user_town"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDataRegisterTitle"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <EditText
+        android:id="@+id/userStreetRegister"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/user_street"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDataRegisterTitle"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <EditText
+        android:id="@+id/userNameRegister"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSurnameRegister"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/userMidNameRegister"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/user_middle_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameRegister"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+        android:id="@+id/userDataRegisterTitle"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
+        android:text="@string/user_data_title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textDirection="firstStrong"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/userPhoneRegister"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/user_phone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userMidNameRegister"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/userHouseRegister"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="@string/user_house"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userStreetRegister"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/userApartRegister"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="@string/user_apartment"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userStreetRegister"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

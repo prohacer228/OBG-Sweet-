@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrazProject">
         <activity
+            android:name=".register.UserDataRegister"
+            android:exported="false" />
+        <activity
             android:name=".newPassword.NewPasswordActivity"
             android:exported="false" />
         <activity

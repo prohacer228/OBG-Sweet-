@@ -16,6 +16,9 @@
     <action
         android:id="@+id/action_Login_to_Reset_Password"
         app:destination="@id/resetPasswordActivity" />
+    <action
+        android:id="@+id/action_Register_to_RegisterUserData"
+        app:destination="@id/userDataRegister" />
     <activity
         android:id="@+id/registerActivity"
         android:name="com.project.grazproject.register.RegisterActivity"
@@ -26,4 +29,9 @@
         android:name="com.project.grazproject.resetPassword.ResetPasswordActivity"
         android:label="activity_reset_password"
         tools:layout="@layout/activity_reset_password" />
+    <activity
+        android:id="@+id/userDataRegister"
+        android:name="com.project.grazproject.register.UserDataRegister"
+        android:label="activity_user_data_register"
+        tools:layout="@layout/activity_user_data_register" />
 </navigation>

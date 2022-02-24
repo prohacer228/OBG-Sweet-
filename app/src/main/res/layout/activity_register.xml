@@ -23,7 +23,7 @@
         android:id="@+id/registerLabel"
         android:layout_width="250dp"
         android:layout_height="54dp"
-        android:text="@string/registerLabel"
+        android:text="@string/register_title"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textDirection="firstStrong"
