@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginActivity">
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.project.grazproject.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <action
+        android:id="@+id/action_Login_to_Register"
+        app:destination="@id/registerActivity" />
+    <action
+        android:id="@+id/action_Login_to_Reset_Password"
+        app:destination="@id/resetPasswordActivity" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.project.grazproject.register.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/resetPasswordActivity"
+        android:name="com.project.grazproject.resetPassword.ResetPasswordActivity"
+        android:label="activity_reset_password"
+        tools:layout="@layout/activity_reset_password" />
+</navigation>

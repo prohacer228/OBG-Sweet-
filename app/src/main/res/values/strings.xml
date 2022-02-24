@@ -35,4 +35,11 @@
     <string name="agreementRules">Я согласен с <u>правилами проекта Сознательный Гражданин</u></string>
     <string name="agreementMailing">Я хочу получать рассылку о новостях проекта на e-mail</string>
 
+    <!-- Strings related to new password -->
+    <string name="new_password_title">Смена пароля</string>
+    <string name="new_password">Новый пароль</string>
+    <string name="repeat_new_password">Повторите пароль</string>
+    <string name="title_activity_new_password">NewPasswordActivity</string>
+    <string name="next">Продолжить</string>
+
 </resources>

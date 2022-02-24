@@ -10,13 +10,14 @@
         android:id="@+id/agreementMailingCB"
         android:layout_width="338dp"
         android:layout_height="60dp"
+        android:checked="true"
         android:text="@string/agreementMailing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintTop_toBottomOf="@+id/AgreementRulesCB"
+        app:layout_constraintVertical_bias="0.079" />
 
     <TextView
         android:id="@+id/registerLabel"
@@ -44,10 +45,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintTop_toBottomOf="@+id/registerLabel"
+        app:layout_constraintVertical_bias="0.054" />
 
     <EditText
         android:id="@+id/emailRegister"
@@ -58,10 +59,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameRegister"
+        app:layout_constraintVertical_bias="0.04" />
 
     <EditText
         android:id="@+id/passwordSet"
@@ -74,8 +75,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister"
+        app:layout_constraintVertical_bias="0.032" />
 
     <EditText
         android:id="@+id/repeatPasswordRegister"
@@ -86,9 +87,10 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordSet"
+        app:layout_constraintVertical_bias="0.037" />
 
     <Button
         android:id="@+id/registerButton"
@@ -97,19 +99,21 @@
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintTop_toBottomOf="@+id/agreementMailingCB"
+        app:layout_constraintVertical_bias="0.243" />
 
     <CheckBox
         android:id="@+id/AgreementRulesCB"
         android:layout_width="338dp"
         android:layout_height="60dp"
+        android:checked="true"
         android:text="@string/agreementRules"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordRegister"
+        app:layout_constraintVertical_bias="0.052" />
 </androidx.constraintlayout.widget.ConstraintLayout>
