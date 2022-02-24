@@ -37,7 +37,15 @@ public class LoginActivity extends AppCompatActivity {
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
-    //TODO : добавить возможность скрывать и показывать пароль
+    //TODO : добавить возможность скрывать и показывать пароль, "закрывающий глаз"
+    //TODO : добавить недостающие экраны
+    //TODO : добавить дизайн
+    //TODO : связать с БД
+    //TODO : добавить возможность взаимодействия с картами
+    //TODO : выяснить и добавить правила проекта "Сознательный гражданин"
+    //TODO : установить ограничения ввода на поля (например, пароль). Так, в некоторых полях можно использовать
+    // только кириллицу и т.п.
+    //TODO : сделать выпадающий список улиц по первой букве
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
