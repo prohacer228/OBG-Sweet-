@@ -1,8 +1,10 @@
 package com.project.grazproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -14,6 +16,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.project.grazproject.about.AboutActivity;
 import com.project.grazproject.databinding.ActivityUserMainBinding;
 
 public class UserMainActivity extends AppCompatActivity {
@@ -39,6 +42,8 @@ public class UserMainActivity extends AppCompatActivity {
     TODO : добавить работу с картами и связать работу с картами с БД
      */
 
+    TextView aboutProg;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,20 +52,14 @@ public class UserMainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarUserMain.toolbar);
-        binding.appBarUserMain.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //TODO: изменить действие всплывающей кнопки, возможно стоит ее убрать
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_sections, R.id.nav_my_messages, R.id.nav_all_messages)
+                R.id.nav_sections, R.id.nav_my_messages, R.id.nav_all_messages, R.id.nav_user_profile,
+                R.id.nav_notifications)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_user_main);

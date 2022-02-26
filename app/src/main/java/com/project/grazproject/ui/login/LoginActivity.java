@@ -161,8 +161,6 @@ public class LoginActivity extends AppCompatActivity {
 
         Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
         startActivity(intent);
-        // Intent intent = new Intent(LoginActivity.this, AboutActivity.class);
-       // startActivity(intent);
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {

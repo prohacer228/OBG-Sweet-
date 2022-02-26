@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrazProject">
         <activity
+            android:name=".MenuActivity.SelectionSectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity.MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserMainActivity"
             android:exported="false"
             android:label="@string/title_activity_user_main"

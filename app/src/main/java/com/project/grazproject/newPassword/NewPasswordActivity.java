@@ -8,6 +8,8 @@ import com.project.grazproject.R;
 
 public class NewPasswordActivity extends AppCompatActivity {
 
+    //TODO : добавить функционал изменения пароля
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
