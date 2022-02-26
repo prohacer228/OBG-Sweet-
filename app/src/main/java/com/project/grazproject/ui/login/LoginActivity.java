@@ -21,6 +21,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.project.grazproject.R;
+import com.project.grazproject.UserMainActivity;
 import com.project.grazproject.databinding.ActivityLoginBinding;
 import com.project.grazproject.register.RegisterActivity;
 import com.project.grazproject.newPassword.ResetPasswordActivity;
@@ -158,7 +159,8 @@ public class LoginActivity extends AppCompatActivity {
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
 
-        // TODO : move about page to another spot
+        Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
+        startActivity(intent);
         // Intent intent = new Intent(LoginActivity.this, AboutActivity.class);
        // startActivity(intent);
     }

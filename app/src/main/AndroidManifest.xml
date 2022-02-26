@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrazProject">
         <activity
+            android:name=".UserMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_main"
+            android:theme="@style/Theme.GrazProject.NoActionBar" />
+        <activity
             android:name=".register.UserDataRegister"
             android:exported="false" />
         <activity

@@ -61,4 +61,18 @@
     <string name="project_rules_text">Правила проекта Сознательный Гражданин</string>
 
 
+    <string name="title_activity_user_main">UserMainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_selections">Рубрики</string>
+    <string name="menu_my_messages">Мои сообщения</string>
+    <string name="menu_all_messages">Все сообщения</string>
+    <string name="sections_title">Рубрики</string>
+
+
 </resources>

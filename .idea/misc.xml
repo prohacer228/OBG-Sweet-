@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/ic_menu_camera.xml" value="0.141" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.141" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.141" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/side_nav_bar.xml" value="0.141" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_about.xml" value="0.14666666666666667" />
@@ -11,10 +15,19 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_reset_password.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_user_data_register.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_user_main.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/app_bar_user_main.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/content_register.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/content_user_main.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_all_messages.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_first.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_gallery.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_home.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_project_rules.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_second.xml" value="0.12604166666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/nav_header_user_main.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/menu/activity_main_drawer.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/menu/user_main.xml" value="0.2" />
       </map>
     </option>
   </component>
