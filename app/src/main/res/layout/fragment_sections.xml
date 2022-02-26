@@ -22,4 +22,77 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.096" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229">
+
+        <TextView
+            android:id="@+id/section_parking"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:background="#CEE0EF"
+            android:gravity="center_vertical|center_horizontal|top"
+            android:text="@string/parking_section"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/section_parking_info"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:gravity="center_vertical|center_horizontal|top"
+            android:text="@string/parking_section_info"
+            android:textSize="24sp"
+            android:translationY="60dp" />
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView1"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.54"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.229">
+
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/section_expired_products"
+        android:layout_width="349dp"
+        android:layout_height="154dp"
+        android:background="#CEE0EF"
+        android:gravity="center_vertical|center_horizontal|top"
+        android:text="@string/section_expired_products"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <TextView
+        android:id="@+id/section_expired_products_info"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical|center_horizontal|top"
+        android:text="@string/section_expired_products"
+        android:textSize="24sp"
+        android:translationY="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/section_expired_products"
+        app:layout_constraintVertical_bias="0.036" />
 </androidx.constraintlayout.widget.ConstraintLayout>

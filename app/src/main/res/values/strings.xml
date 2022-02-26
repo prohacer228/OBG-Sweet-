@@ -79,5 +79,8 @@
 
     <string name="reset_email_mes">На ваш почтовый ящик высланы дальнейшие инструкции по смене пароля</string>
     <string name="menu_feedback">Обратная связь</string>
+    <string name="parking_section">Парковки</string>
+    <string name="parking_section_info">Нарушение парковки</string>
+    <string name="section_expired_products">Просроченные продукты</string>
 
 </resources>
