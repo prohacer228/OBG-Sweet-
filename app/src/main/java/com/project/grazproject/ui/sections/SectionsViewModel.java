@@ -10,7 +10,7 @@ public class SectionsViewModel extends ViewModel {
 
     public SectionsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Тут будут рубрики");
+        mText.setValue("Создать новое сообщение");
     }
 
     public LiveData<String> getText() {

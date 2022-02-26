@@ -75,7 +75,7 @@
     <string name="sections_title">Рубрики</string>
     <string name="menu_notifications">Уведомления</string>
     <string name="menu_user_profile">Профиль</string>
-
+    <string name="menu_create_message">Создать сообщение</string>
 
     <string name="reset_email_mes">На ваш почтовый ящик высланы дальнейшие инструкции по смене пароля</string>
     <string name="menu_feedback">Обратная связь</string>
