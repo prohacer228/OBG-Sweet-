@@ -19,7 +19,7 @@
             android:name=".register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".resetPassword.ResetPasswordActivity"
+            android:name=".newPassword.ResetPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".ui.login.LoginActivity"

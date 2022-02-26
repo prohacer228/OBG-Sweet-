@@ -23,7 +23,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.project.grazproject.R;
 import com.project.grazproject.databinding.ActivityLoginBinding;
 import com.project.grazproject.register.RegisterActivity;
-import com.project.grazproject.resetPassword.ResetPasswordActivity;
+import com.project.grazproject.newPassword.ResetPasswordActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
