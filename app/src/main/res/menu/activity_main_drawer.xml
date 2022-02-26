@@ -22,4 +22,9 @@
             android:title="@string/menu_user_profile" />
 
     </group>
+    <group >
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="@string/menu_feedback" />
+    </group>
 </menu>

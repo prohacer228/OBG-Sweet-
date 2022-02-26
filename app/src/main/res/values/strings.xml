@@ -78,6 +78,6 @@
 
 
     <string name="reset_email_mes">На ваш почтовый ящик высланы дальнейшие инструкции по смене пароля</string>
-
+    <string name="menu_feedback">Обратная связь</string>
 
 </resources>
