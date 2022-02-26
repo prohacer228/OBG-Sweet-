@@ -21,23 +21,23 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
     private ActivityResetPasswordBinding binding;
 
+    TextView registerLink;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
 
-       /* final TextView registerPR = binding.registerPR;
+        registerLink = findViewById(R.id.registerPR);
 
-        registerPR.setOnClickListener(new View.OnClickListener() {
+        registerLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(ResetPasswordActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });
-        *
-        */
+
     }
 
 }

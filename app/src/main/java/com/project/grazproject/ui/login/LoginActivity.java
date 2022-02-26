@@ -142,9 +142,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // TODO : сделать переход на экран восстановления пароля. Пока вылетает
-        //go to Reset Password activity
-
+        //Переход на станицу "Забыли пароль"
        forgotPassword.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
