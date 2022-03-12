@@ -58,6 +58,7 @@ public class UserMainActivity extends AppCompatActivity {
         setSupportActionBar(binding.appBarUserMain.toolbar);
 
         DrawerLayout drawer = binding.drawerLayout;
+        //наш view's drawer
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

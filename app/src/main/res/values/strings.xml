@@ -82,5 +82,11 @@
     <string name="parking_section">Парковки</string>
     <string name="parking_section_info">Нарушение парковки</string>
     <string name="section_expired_products">Просроченные продукты</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="CreateMessageTitle">Опишите проблему</string>
+    <string name="MessageTheme">Тема сообщения</string>
+    <string name="MessageTextMain">Текст сообщения (максимум 600 символов)</string>
+    <string name="PostMessage">Опубликовать сообщение</string>
+    <string name="AddPhoto">Добавить фото</string>
 
 </resources>

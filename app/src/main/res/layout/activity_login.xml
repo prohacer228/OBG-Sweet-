@@ -18,7 +18,7 @@
         android:layout_marginTop="156dp"
         android:autofillHints="@string/prompt_login"
         android:hint="@string/prompt_login"
-        android:inputType="text|textEmailAddress"
+        android:inputType="text"
         android:minHeight="48dp"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,6 @@
         android:layout_width="328dp"
         android:layout_height="53dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="58dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="casual"
@@ -88,9 +87,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.110000014" />
+        app:layout_constraintVertical_bias="0.693" />
 
     <Button
         android:id="@+id/registerButtonLog"

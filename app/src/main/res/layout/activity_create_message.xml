@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CreateMessages.CreateMessage">
+
+    <TextView
+        android:id="@+id/CreateMessageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CreateMessageTitle"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <EditText
+        android:id="@+id/MessageThemeSet"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:defaultFocusHighlightEnabled="false"
+        android:ems="10"
+        android:focusedByDefault="false"
+        android:hint="@string/MessageTheme"
+        android:inputType="textShortMessage|textAutoComplete|textAutoCorrect"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateMessageTitle"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <Button
+        android:id="@+id/PostMessageButton"
+        android:layout_width="267dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="96dp"
+        android:selectAllOnFocus="true"
+        android:text="@string/PostMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPhotoMessage" />
+
+    <TextView
+        android:id="@+id/addPhotoMessage"
+        android:layout_width="251dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/AddPhoto"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MessageMainText"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="84dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="15dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addPhotoMessage"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MessageMainText"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/MessageMainText"
+        android:layout_width="357dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/MessageTextMain"
+        android:maxLength="600"
+        android:inputType="textMultiLine|textAutoComplete|textAutoCorrect"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MessageThemeSet"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
