@@ -43,21 +43,20 @@
         android:id="@+id/PostMessageButton"
         android:layout_width="267dp"
         android:layout_height="48dp"
-        android:layout_marginTop="36dp"
         android:layout_marginBottom="96dp"
         android:selectAllOnFocus="true"
         android:text="@string/PostMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPhotoMessage" />
+        app:layout_constraintTop_toBottomOf="@+id/addPhotoButton" />
 
     <TextView
-        android:id="@+id/addPhotoMessage"
+        android:id="@+id/addPhotoButton"
         android:layout_width="251dp"
         android:layout_height="61dp"
         android:layout_marginTop="15dp"
+        android:gravity="center"
         android:text="@string/AddPhoto"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -67,20 +66,20 @@
         app:layout_constraintHorizontal_bias="0.837"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MessageMainText"
-        app:layout_constraintVertical_bias="0.100000024" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="84dp"
-        android:layout_height="61dp"
+        android:id="@+id/addPhotoImage"
+        android:layout_width="106dp"
+        android:layout_height="59dp"
         android:layout_marginTop="15dp"
         android:src="@android:drawable/ic_menu_camera"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addPhotoMessage"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintEnd_toStartOf="@+id/addPhotoButton"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MessageMainText"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/MessageMainText"
@@ -90,8 +89,8 @@
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/MessageTextMain"
-        android:maxLength="600"
         android:inputType="textMultiLine|textAutoComplete|textAutoCorrect"
+        android:maxLength="600"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,6 +98,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MessageThemeSet"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/addPhotoImageNew"
+        android:layout_width="182dp"
+        android:layout_height="171dp"
+
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@android:drawable/gallery_thumb"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/MessageMainText"
+        app:layout_constraintEnd_toEndOf="@+id/MessageMainText"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="@+id/MessageMainText"
+        app:layout_constraintTop_toTopOf="@+id/MessageMainText"
+        app:layout_constraintVertical_bias="0.585" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

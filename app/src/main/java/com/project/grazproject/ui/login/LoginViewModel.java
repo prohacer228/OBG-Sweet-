@@ -56,8 +56,14 @@ public class LoginViewModel extends ViewModel {
         if (username == null) {
             return false;
         }
+        /*TODO: добавить органичения. Можно использовать латинские буквы, цифры, символы тире
+           (-), подчеркивания (_) и точки (.); знак @ в логине недопустим;
+           пробел в логине недопустим; логин не может начинаться и
+           заканчиваться точкой.
+         */
         if (username.contains("@")) {
-            return Patterns.EMAIL_ADDRESS.matcher(username).matches();
+            return false;
+          //  return Patterns.EMAIL_ADDRESS.matcher(username).matches();
         } else {
             return !username.trim().isEmpty();
         }
@@ -65,6 +71,7 @@ public class LoginViewModel extends ViewModel {
 
     // A placeholder password validation check
     private boolean isPasswordValid(String password) {
+        //пароль более 5 символов
         return password != null && password.trim().length() > 5;
     }
 }

@@ -10,10 +10,11 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_about.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_create_message.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_create_message.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_maps.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_menu.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_new_message_done.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_new_password.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_parking_section.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_register.xml" value="0.22" />
@@ -35,6 +36,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_second.xml" value="0.12604166666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_sections.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_user_profile.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/layout.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/nav_header_user_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/menu/activity_main_drawer.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/menu/user_main.xml" value="0.2" />

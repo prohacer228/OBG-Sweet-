@@ -88,5 +88,11 @@
     <string name="MessageTextMain">Текст сообщения (максимум 600 символов)</string>
     <string name="PostMessage">Опубликовать сообщение</string>
     <string name="AddPhoto">Добавить фото</string>
+    <string name="newMessageTitle">Новое сообщение</string>
+    <string name="addedPhotos">Добавленные фото…</string>
+
+    <string name="picture">Фото</string>
+    <string name="select_intro">Long-press a thumbnail to add an image</string>
+    <string name="show_intro">Press a thumbnail to display at larger size</string>
 
 </resources>

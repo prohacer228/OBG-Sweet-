@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrazProject">
         <activity
+            android:name=".ui.CreateMessages.NewMessageDoneActivity"
+            android:exported="false"/>
+        <activity
             android:name=".ui.CreateMessages.CreateMessage"
             android:exported="false" />
         <!--
@@ -68,5 +71,7 @@
             android:name=".about.AboutActivity"
             android:label="@string/about_title" />
     </application>
+
+
 
 </manifest>
