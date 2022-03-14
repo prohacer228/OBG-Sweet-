@@ -1,0 +1,46 @@
+repositories {
+    mavenCentral()
+    google()
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.1.1'
+    }
+}
+
+apply plugin: "com.android.application"
+
+android {
+    dependencies {
+        /* lite version provides only map and some core services
+         * full version provides the rest of maps API
+         * routing, panoramas, search and etc.
+         * implementation 'com.yandex.android:maps.mobile:4.0.0-lite'
+         */
+        implementation 'com.yandex.android:maps.mobile:4.0.0-full'
+    }
+
+    compileSdkVersion 32
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 32
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+}

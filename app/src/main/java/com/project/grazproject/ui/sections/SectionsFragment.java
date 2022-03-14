@@ -13,9 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.project.grazproject.databinding.FragmentSectionsBinding;
 import com.project.grazproject.mapsactivity.MapsActivity;
-import com.project.grazproject.register.RegisterActivity;
 import com.project.grazproject.ui.CreateMessages.CreateMessage;
-import com.project.grazproject.ui.login.LoginActivity;
 
 public class SectionsFragment extends Fragment {
 
@@ -35,7 +33,7 @@ public class SectionsFragment extends Fragment {
         sectionsViewModel.getText().observe(getViewLifecycleOwner(), sectionsText::setText);
 
         //Ссылки перехода на activity карт с фрагментов
-       sectionParkingLink = binding.sectionParking;
+        sectionParkingLink = binding.sectionParking;
         sectionExpiredProducts =binding.sectionExpiredProducts;
 
         sectionParkingLink.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +44,7 @@ public class SectionsFragment extends Fragment {
                    которой уже будут осуществляться дальнейшие действия (создание сообщения)
                  */
                 //Здесь пока переход сразу на создание сообщения CreateMessage
-                Intent intent = new Intent(SectionsFragment.this.getActivity(), CreateMessage.class);
+                Intent intent = new Intent(SectionsFragment.this.getActivity(), MapsActivity.class);
                 startActivity(intent);
             }
         });

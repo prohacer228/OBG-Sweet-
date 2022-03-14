@@ -32,8 +32,9 @@
 
         <activity
             android:name=".mapsactivity.MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
         <activity
             android:name=".MenuActivity.SelectionSectionActivity"
             android:exported="false" />

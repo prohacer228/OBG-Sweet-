@@ -1,4 +1,4 @@
-package com.project.grazproject.mapsactivity;
+package com.project.grazproject.mapkitdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import com.yandex.mapkit.mapview.MapView;
  * This is a basic example that displays a map and sets camera focus on the target location.
  * Note: When working on your projects, remember to request the required permissions.
  */
-public class MapsActivity extends Activity {
+public class MapActivity extends Activity {
     /**
      * Replace "your_api_key" with a valid developer key.
      * You can get it at the https://developer.tech.yandex.ru/ website.
@@ -28,16 +28,16 @@ public class MapsActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         /**
-         * Set the api key before calling initialize on MapKitFactory.
-         * It is recommended to set api key in the Application.onCreate method,
-         * but here we do it in each activity to make examples isolated.
-         */
+        * Set the api key before calling initialize on MapKitFactory.
+        * It is recommended to set api key in the Application.onCreate method,
+        * but here we do it in each activity to make examples isolated.
+        */
         MapKitFactory.setApiKey(MAPKIT_API_KEY);
         /**
-         * Initialize the library to load required native libraries.
-         * It is recommended to initialize the MapKit library in the Activity.onCreate method
-         * Initializing in the Application.onCreate method may lead to extra calls and increased battery use.
-         */
+        * Initialize the library to load required native libraries.
+        * It is recommended to initialize the MapKit library in the Activity.onCreate method
+        * Initializing in the Application.onCreate method may lead to extra calls and increased battery use.
+        */
         MapKitFactory.initialize(this);
         // Now MapView can be created.
         setContentView(R.layout.map);
