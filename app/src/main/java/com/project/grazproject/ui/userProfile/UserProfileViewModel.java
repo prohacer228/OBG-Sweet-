@@ -10,7 +10,7 @@ public class UserProfileViewModel extends ViewModel {
 
     public UserProfileViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Тут будет профиль пользователя");
+        mText.setValue("");
     }
 
     public LiveData<String> getText() {

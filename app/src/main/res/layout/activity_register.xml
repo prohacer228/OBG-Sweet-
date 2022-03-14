@@ -19,6 +19,24 @@
         app:layout_constraintTop_toBottomOf="@+id/AgreementRulesCB"
         app:layout_constraintVertical_bias="0.079" />
 
+    <!--Enabling the password toggle -->
+
+    <!--
+    <EditText
+        android:id="@+id/passwordSet"
+        android:layout_width="335dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="@string/passwordSet"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegister"
+        app:layout_constraintVertical_bias="0.032" />
+        -->
+
     <TextView
         android:id="@+id/registerLabel"
         android:layout_width="250dp"
@@ -34,63 +52,109 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112" />
+        app:layout_constraintVertical_bias="0.047" />
 
     <EditText
         android:id="@+id/usernameRegister"
         android:layout_width="336dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="5dp"
         android:ems="10"
         android:hint="@string/userName"
+        android:imeOptions="actionNext"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerLabel"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <EditText
         android:id="@+id/emailRegister"
         android:layout_width="335dp"
         android:layout_height="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
+        android:selectAllOnFocus="true"
         app:layout_constraintTop_toBottomOf="@+id/usernameRegister"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.013" />
 
-    <EditText
-        android:id="@+id/passwordSet"
-        android:layout_width="335dp"
-        android:layout_height="57dp"
-        android:ems="10"
-        android:hint="@string/passwordSet"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayoutRegister"
+        android:layout_width="334dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailRegister"
-        app:layout_constraintVertical_bias="0.032" />
+        app:passwordToggleEnabled="true">
 
+        <!-- Новая версия пароля с глазом -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordSet"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/passwordSet"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/black"
+            android:textColorHint="#757575" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--
     <EditText
         android:id="@+id/repeatPasswordRegister"
         android:layout_width="337dp"
         android:layout_height="60dp"
         android:ems="10"
         android:hint="@string/passwordRepeat"
+        android:imeOptions="actionNext"
         android:inputType="textPassword"
+        android:selectAllOnFocus="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordSet"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLayoutRegister"
+        app:layout_constraintVertical_bias="0.04" />
+        -->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayoutRegister2"
+        android:layout_width="334dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLayoutRegister"
+        app:layout_constraintVertical_bias="0.055"
+        app:passwordToggleEnabled="true">
+
+        <!-- Новая версия пароля с глазом -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repeatPasswordRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/passwordRepeat"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/registerButton"
@@ -114,6 +178,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordRegister"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLayoutRegister2"
+        app:layout_constraintVertical_bias="0.057" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

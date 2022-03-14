@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                 .get(LoginViewModel.class);
 
        usernameEditText = binding.username;
-       passwordEditText = binding.password;
+       passwordEditText = (EditText) binding.password;
        loginButton = binding.login;
        registerButton = binding.registerButtonLog;
        loadingProgressBar = binding.loading;
@@ -110,6 +110,8 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         };
+
+        // TODO : добавлен глаз, но надо исправить некотректность отобржения замечания о длине пароля
         usernameEditText.addTextChangedListener(afterTextChangedListener);
         passwordEditText.addTextChangedListener(afterTextChangedListener);
         passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {

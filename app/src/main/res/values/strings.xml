@@ -124,5 +124,6 @@
         <string name="user_location">User Location</string>
         <string name="driving">Driving</string>
         <string name="not_found_error_message">Not found</string>
+    <string name="Samara">Самара</string>
 
 </resources>

@@ -16,11 +16,96 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="605dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/text_user_profile"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/profileUsername"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/userName"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileEmail"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileName"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileSurname"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_surname"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileMiddleName"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_middle_name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
