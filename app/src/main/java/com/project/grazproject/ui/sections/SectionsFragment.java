@@ -18,6 +18,7 @@ import com.project.grazproject.ui.CreateMessages.CreateMessage;
 public class SectionsFragment extends Fragment {
 
     private FragmentSectionsBinding binding;
+
     TextView sectionsText;
     TextView sectionParkingLink, sectionExpiredProducts;
 
@@ -30,11 +31,13 @@ public class SectionsFragment extends Fragment {
         View root = binding.getRoot();
 
         sectionsText = binding.textSections;
+
         sectionsViewModel.getText().observe(getViewLifecycleOwner(), sectionsText::setText);
 
         //Ссылки перехода на activity карт с фрагментов
         sectionParkingLink = binding.sectionParking;
         sectionExpiredProducts =binding.sectionExpiredProducts;
+
 
         sectionParkingLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +60,6 @@ public class SectionsFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
 
         return root;
     }

@@ -19,8 +19,7 @@
 
     <!-- Strings related to about -->
     <string name="about_program">
-        "Компания «ЭкоВыбор» занимается сортировкой, вывозом и переработкой различных отходов, а
-также вывоз строительного мусора. "</string>
+        "Компания «ЭкоВыбор» занимается сортировкой, вывозом и переработкой различных отходов, а также вывоз строительного мусора."</string>
     <string name="about_title">О программе</string>
 
     <!-- Strings related to password reset -->
@@ -96,34 +95,34 @@
     <string name="show_intro">Press a thumbnail to display at larger size</string>
 
     <string name="cluster_tap_message">Tapped cluster with %d items</string>
-        <!-- Strings related to common -->
-        <string name="unknown_error_message">Unknown error</string>
-        <string name="network_error_message">Network error</string>
-        <string name="remote_error_message">Remote server error</string>
-        <string name="map">Map</string>/string
+    <!-- Strings related to common -->
+    <string name="unknown_error_message">Unknown error</string>
+    <string name="network_error_message">Network error</string>
+    <string name="remote_error_message">Remote server error</string>
+    <string name="map">Map</string>/string
 
- <string name="search">Search</string>
-        <string name="suggest">Suggest</string>
-        <string name="panorama">Panorama</string>
-        <string name="custom_layer">Custom Layer</string>
-        <string name="masstransit_routing">Masstransit routing</string>
-        <string name="geo_json_test">Geo JSON</string>
-        <string name="clustering">Clustering</string>
-        <string name="jams">Jams</string>
-        <string name="selection">Selection</string>
+    <string name="search">Search</string>
+    <string name="suggest">Suggest</string>
+    <string name="panorama">Panorama</string>
+    <string name="custom_layer">Custom Layer</string>
+    <string name="masstransit_routing">Masstransit routing</string>
+    <string name="geo_json_test">Geo JSON</string>
+    <string name="clustering">Clustering</string>
+    <string name="jams">Jams</string>
+    <string name="selection">Selection</string>
 
-           <string name="package_name">com.yandex.mapkitdemo</string>
-        <!-- Strings related to user data register -->
-          <string name="mapobjects">Map Objects</string>
-        <!-- Strings related to new password -->
-          <string name="map_sublayers">Map Sublayers</string>
-        <string name="sublayer_buildings_before_mo_geometry">Render Buildings before Map Object Geometry</string>
-        <string name="sublayer_buildings_after_mo_geometry">Render Buildings after Map Object Geometry</string>
-        <!-- Strings related to project rules -->
-         <string name="customization">Customization</string>
-        <string name="user_location">User Location</string>
-        <string name="driving">Driving</string>
-        <string name="not_found_error_message">Not found</string>
+    <string name="package_name">com.yandex.mapkitdemo</string>
+    <!-- Strings related to user data register -->
+    <string name="mapobjects">Map Objects</string>
+    <!-- Strings related to new password -->
+    <string name="map_sublayers">Map Sublayers</string>
+    <string name="sublayer_buildings_before_mo_geometry">Render Buildings before Map Object Geometry</string>
+    <string name="sublayer_buildings_after_mo_geometry">Render Buildings after Map Object Geometry</string>
+    <!-- Strings related to project rules -->
+    <string name="customization">Customization</string>
+    <string name="user_location">User Location</string>
+    <string name="driving">Driving</string>
+    <string name="not_found_error_message">Not found</string>
     <string name="Samara">Самара</string>
 
 </resources>

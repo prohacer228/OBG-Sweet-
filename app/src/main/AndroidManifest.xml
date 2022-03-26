@@ -11,7 +11,7 @@
         android:theme="@style/Theme.GrazProject">
         <activity
             android:name=".ui.CreateMessages.NewMessageDoneActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ui.CreateMessages.CreateMessage"
             android:exported="false" />
@@ -34,7 +34,6 @@
             android:name=".mapsactivity.MapsActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@android:style/Theme.NoTitleBar" />
-
         <activity
             android:name=".MenuActivity.SelectionSectionActivity"
             android:exported="false" />
@@ -72,7 +71,5 @@
             android:name=".about.AboutActivity"
             android:label="@string/about_title" />
     </application>
-
-
 
 </manifest>
