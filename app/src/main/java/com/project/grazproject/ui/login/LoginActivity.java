@@ -89,6 +89,9 @@ public class LoginActivity extends AppCompatActivity {
                 setResult(Activity.RESULT_OK);
 
                 //Complete and destroy login activity once successful
+                Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
+                startActivity(intent);
+
                 finish();
             }
         });
@@ -161,8 +164,6 @@ public class LoginActivity extends AppCompatActivity {
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
 
-        Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
-        startActivity(intent);
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
