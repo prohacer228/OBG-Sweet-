@@ -43,12 +43,14 @@ public class SectionsFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                /*TODO: Здесь заменить переход на карты. На картах сделать кнопку "Дальше", по
+                /*TODO: На картах сделать кнопку "Дальше", по
                    которой уже будут осуществляться дальнейшие действия (создание сообщения)
                  */
                 //Здесь пока переход сразу на создание сообщения CreateMessage
                 Intent intent = new Intent(SectionsFragment.this.getActivity(), MapsActivity.class);
                 startActivity(intent);
+
+              //  intent.putExtra("Section", sectionParkingLink.getText().toString());
             }
         });
 
@@ -58,6 +60,8 @@ public class SectionsFragment extends Fragment {
             public void onClick(View view) {
                 Intent intent = new Intent(SectionsFragment.this.getActivity(), CreateMessage.class);
                 startActivity(intent);
+
+              //  intent.putExtra("Section", sectionExpiredProducts.getText().toString());
             }
         });
 

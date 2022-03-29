@@ -124,5 +124,7 @@
     <string name="driving">Driving</string>
     <string name="not_found_error_message">Not found</string>
     <string name="Samara">Самара</string>
+    <string name="incident_adress">Адрес происшествия</string>
+    <string name="section_incident_done">Раздел происшествия</string>
 
 </resources>
