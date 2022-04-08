@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -25,6 +26,8 @@ public class UserMainActivity extends AppCompatActivity {
     TextView aboutProg;
     ImageView closeButton;
 
+    private long backPressedTime;
+    private Toast backToast;
     /*
     TODO : "Создать сообщение", изменить функционал "рубрик"
     TODO : добавить Экран Карты с переходом от рубрик
@@ -95,5 +98,21 @@ public class UserMainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_user_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(backPressedTime + 2000 > System.currentTimeMillis())
+        {
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        }
+        else
+        {
+           backToast = Toast.makeText(getBaseContext(), "Нажмите еще раз для выхода", Toast.LENGTH_SHORT);
+           backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 }

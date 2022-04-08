@@ -133,5 +133,6 @@
     <string name="Send">Отправить</string>
     <string name="FeedBackMessage">Напишите нам</string>
     <string name="FeedbackMess">Сообщение</string>
+    <string name="SaveOnDevice">Сохранить на устройство</string>
 
 </resources>

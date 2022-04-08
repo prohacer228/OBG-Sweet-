@@ -10,4 +10,6 @@
     <color name="LightSkyBlue">#87CEFA</color>
     <color name="customMain">#E6E6FA</color>
     <color name="customText">#00A550</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_80">#37474F</color>
 </resources>

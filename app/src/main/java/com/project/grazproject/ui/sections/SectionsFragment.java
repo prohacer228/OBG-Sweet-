@@ -19,6 +19,7 @@ public class SectionsFragment extends Fragment {
 
     private FragmentSectionsBinding binding;
 
+    public static String section;
     TextView sectionsText;
     TextView sectionParkingLink, sectionExpiredProducts;
 
@@ -43,6 +44,7 @@ public class SectionsFragment extends Fragment {
             @Override
             public void onClick(View view) {
 
+                section = sectionParkingLink.getText().toString();
                 /*TODO: На картах сделать кнопку "Дальше", по
                    которой уже будут осуществляться дальнейшие действия (создание сообщения)
                  */
@@ -58,12 +60,15 @@ public class SectionsFragment extends Fragment {
         sectionExpiredProducts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                section = sectionExpiredProducts.getText().toString();
                 Intent intent = new Intent(SectionsFragment.this.getActivity(), CreateMessage.class);
                 startActivity(intent);
 
               //  intent.putExtra("Section", sectionExpiredProducts.getText().toString());
             }
         });
+
+
 
         return root;
     }
