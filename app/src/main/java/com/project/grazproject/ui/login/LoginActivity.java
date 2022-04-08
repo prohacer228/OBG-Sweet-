@@ -21,15 +21,18 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.project.grazproject.R;
+import com.project.grazproject.User.User;
 import com.project.grazproject.UserMainActivity;
 import com.project.grazproject.databinding.ActivityLoginBinding;
-import com.project.grazproject.register.RegisterActivity;
 import com.project.grazproject.newPassword.ResetPasswordActivity;
+import com.project.grazproject.register.RegisterActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
+
+  //  public static List<User> users;
 
     EditText usernameEditText;
     EditText passwordEditText;
@@ -88,13 +91,34 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 setResult(Activity.RESULT_OK);
 
-                //Complete and destroy login activity once successful
+                User loggedUser = new User();
+                loggedUser.username = usernameEditText.getText().toString();
+                loggedUser.password = passwordEditText.getText().toString();
+
+                /*
+                if(CheckUser(loggedUser))
+                {
+                    //Complete and destroy login activity once successful
+                    Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
+                    startActivity(intent);
+
+                    finish();
+                }
+                else {
+                    Toast.makeText(LoginActivity.this, "Пользователя не существует", Toast.LENGTH_SHORT).show();
+                }
+
+                 */
+
                 Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
                 startActivity(intent);
 
                 finish();
+
+
             }
         });
+
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
             @Override
@@ -135,6 +159,7 @@ public class LoginActivity extends AppCompatActivity {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+
             }
 
         });
@@ -159,6 +184,7 @@ public class LoginActivity extends AppCompatActivity {
        });
     }
 
+
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
@@ -169,4 +195,18 @@ public class LoginActivity extends AppCompatActivity {
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
+
+    //переделать проверку на совпадение юзера
+   /* boolean checkUserBol;
+    public boolean CheckUser(User loggedUser)
+    {
+        for(int i =0;i<users.size(); i++) {
+            User user = users.get(i);
+            checkUserBol = user.username.contains(loggedUser.username);
+
+        }
+        return checkUserBol;
+    }
+
+    */
 }

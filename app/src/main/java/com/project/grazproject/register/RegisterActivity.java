@@ -19,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText password, repeatPassword;
     TextView rulesProject;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +39,18 @@ public class RegisterActivity extends AppCompatActivity {
 
                 //Проверка полей, они не должны быть пустыми
               if(isEmptyFields()) {
-                  Intent intent = new Intent(RegisterActivity.this, UserDataRegister.class);
-                  startActivity(intent);
 
+                // User createdUser = CreateUser(username.getText().toString(), email.getText().toString(), password.getText().toString());
+
+                  Intent intent = new Intent(RegisterActivity.this, UserDataRegister.class);
+
+                  if(!username.getText().toString().isEmpty() && !email.getText().toString().isEmpty()
+                          && !password.getText().toString().isEmpty()) {
+                      intent.putExtra("username", username.getText().toString());
+                      intent.putExtra("email", email.getText().toString());
+                      intent.putExtra("password", password.getText().toString());
+                  }
+                  startActivity(intent);
                   //Уничтожает активити с регистрацией, после перезода на дальнейшую страницу
                 //  finish();
               }
@@ -57,6 +67,18 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
     }
+
+   /* public User CreateUser(String username, String email, String password)
+    {
+        User newUser = new User();
+
+        newUser.username = username;
+        newUser.email = email;
+        newUser.password = password;
+
+        return newUser;
+    }
+    */
 
     boolean isEmptyFields()
     {

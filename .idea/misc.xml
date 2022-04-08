@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/back.xml" value="0.138" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/ic_menu_camera.xml" value="0.141" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.141" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.141" />
@@ -40,7 +41,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_project_rules.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_second.xml" value="0.12604166666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_sections.xml" value="0.1911231884057971" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_user_profile.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_user_profile.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/geo_json.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/jams.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/layout.xml" value="0.1838768115942029" />

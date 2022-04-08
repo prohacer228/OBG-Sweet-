@@ -19,7 +19,10 @@
 
     <!-- Strings related to about -->
     <string name="about_program">
-        "Компания «ЭкоВыбор» занимается сортировкой, вывозом и переработкой различных отходов, а также вывоз строительного мусора."</string>
+        "Компания <font color="#00A550">«ЭкоВыбор»</font> занимается сортировкой,
+        вывозом и переработкой различных отходов, а также вывоз строительного мусора.\n\n
+        Сайт компании: \n
+        <font color="#00A550"><i>http://eco-choice63.tilda.ws/</i></font>"</string>
     <string name="about_title">О программе</string>
 
     <!-- Strings related to password reset -->
@@ -126,5 +129,8 @@
     <string name="Samara">Самара</string>
     <string name="incident_adress">Адрес происшествия</string>
     <string name="section_incident_done">Раздел происшествия</string>
+    <string name="Send">Отправить</string>
+    <string name="FeedBackMessage">Напишите нам</string>
+    <string name="FeedbackMess">Сообщение</string>
 
 </resources>

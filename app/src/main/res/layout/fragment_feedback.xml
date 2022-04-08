@@ -7,7 +7,21 @@
     tools:context=".ui.feedback.FeedbackFragment">
 
 
-<TextView
+    <Button
+        android:id="@+id/SendFeedback"
+        android:layout_width="252dp"
+        android:layout_height="49dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="140dp"
+        android:enabled="true"
+        android:text="@string/Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FeedBackMessage" />
+
+    <TextView
         android:id="@+id/text_feedback"
         android:layout_width="251dp"
         android:layout_height="25dp"
@@ -16,4 +30,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/FeedbackInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:gravity="center_horizontal"
+        android:text="@string/FeedBackMessage"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/SendFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/FeedBackMessage"
+        android:layout_width="331dp"
+        android:layout_height="306dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:fallbackLineSpacing="false"
+        android:gravity="start|top"
+        android:hint="@string/FeedbackMess"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/SendFeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FeedbackInfo"
+        app:layout_constraintVertical_bias="0.51" />
+    <!-- android:background="@drawable/back" -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

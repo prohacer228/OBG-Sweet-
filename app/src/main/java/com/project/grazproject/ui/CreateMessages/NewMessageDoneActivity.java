@@ -1,5 +1,6 @@
 package com.project.grazproject.ui.CreateMessages;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -16,7 +17,7 @@ public class NewMessageDoneActivity extends AppCompatActivity {
     private ImageSwitcher imageSwitcher;
     TextView finalThemeMessage, incidentAddress, incidentSection;
     EditText setThemeMessage, mainMessageDone;
-    ImageView photo;
+    ImageView photo, photoDone;
     View imageLayout;
 
     //TODO: передевать фото с предыдущей формы на эту
@@ -25,7 +26,6 @@ public class NewMessageDoneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_message_done);
-
 
         finalThemeMessage = findViewById(R.id.MessageThemeDone);
         mainMessageDone = findViewById(R.id.MessageMainTextDone);
@@ -38,25 +38,17 @@ public class NewMessageDoneActivity extends AppCompatActivity {
         Bundle arguments = getIntent().getExtras();
         String theme = arguments.get("theme").toString();
         String message = arguments.get("message").toString();
-      //  String section = arguments.get("Section").toString();
+        Bitmap picture = (Bitmap) arguments.get("photo");
 
-      //  Bitmap image = (Bitmap) arguments.get("image");
         //Установка темы и текста сообщения
         finalThemeMessage.setText(theme);
         mainMessageDone.setText(message);
+        photo.setImageBitmap(picture);
+
       //  incidentSection.setText(section);
 
       //  photo.setImageBitmap(image);
 
-
-        // TODO: переделать показ фото. Надо получать картинки с предыдущей активи
-         /* imageSwitcher = findViewById(R.id.imageSwitcher);
-
-        imageSwitcher = findViewById(R.id.imageSwitcher);
-        imageView = findViewById(R.id.addPhotoImageNew);
-        imageSwitcher.setImageDrawable(imageView.getDrawable());
-
-        */
     }
 
 

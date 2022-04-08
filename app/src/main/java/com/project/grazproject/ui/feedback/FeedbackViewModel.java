@@ -10,7 +10,7 @@ public class FeedbackViewModel extends ViewModel {
 
     public FeedbackViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Обратная связь");
+        mText.setValue(""); //Обратная связь
     }
 
     public LiveData<String> getText() {

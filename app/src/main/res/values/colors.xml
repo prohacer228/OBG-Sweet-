@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="LightSkyBlue">#87CEFA</color>
     <color name="customMain">#E6E6FA</color>
+    <color name="customText">#00A550</color>
 </resources>

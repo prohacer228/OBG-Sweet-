@@ -27,14 +27,15 @@
         app:layout_constraintVertical_bias="0.062" />
 
     <ScrollView
-        android:layout_width="413dp"
-        android:layout_height="605dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="380dp"
+        android:layout_height="601dp"
+        android:layout_marginTop="43dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_user_profile"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/text_user_profile"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,6 +105,71 @@
                 android:enabled="false"
                 android:hint="@string/user_middle_name"
                 android:inputType="textPersonName"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profilePhoneNumber"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_phone"
+                android:inputType="phone"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileTown"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_town"
+                android:inputType="textShortMessage|textLongMessage"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileStreet"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_street"
+                android:inputType="textShortMessage|textLongMessage"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileHouse"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_house"
+                android:inputType="textShortMessage|textLongMessage"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/profileApart"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/user_apartment"
+                android:inputType="textShortMessage|textLongMessage"
                 android:textColor="@color/black" />
 
         </LinearLayout>

@@ -19,15 +19,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.project.grazproject.R;
 
 import java.io.IOException;
-import java.util.List;
 
 public class CreateMessage extends AppCompatActivity {
 
-    private ImageView addedPhoto;
+    private ImageView addedPhoto, photoDone;
     private TextView addedPhotosText;
     private Button PostMessageButton;
     private EditText setTheme, MainMessage;
-    private List<Bitmap> selectedImages;
+    private Bitmap selectedImage;
 
      //TODO: изменить показ фото на несколько фото
     // TODO: исправить добавление фото с камеры
@@ -46,6 +45,7 @@ public class CreateMessage extends AppCompatActivity {
         MainMessage =findViewById(R.id.MessageMainText);
 
         PostMessageButton = findViewById(R.id.PostMessageButton);
+        photoDone = findViewById(R.id.Photos);
 
         //При загрузке скрываем надпись и фото
         addedPhoto.setVisibility(View.INVISIBLE);
@@ -59,50 +59,6 @@ public class CreateMessage extends AppCompatActivity {
             public void onClick(View view) {
 
                 showPictureDialog();
-
-             /*   String title = "Выбор изображений";
-                String message = "Загрузить изображения";
-                String buttonCamera = "Камера";
-                String buttonGallery = "Галерея";
-
-                AlertDialog.Builder builder = new AlertDialog.Builder(CreateMessage.this);
-                builder.setTitle(title);  // заголовок
-                builder.setMessage(message); // сообщение
-                builder.setPositiveButton(buttonCamera, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Intent intentCamera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        try{
-                            startActivityForResult(intentCamera, REQUEST_TAKE_PHOTO);
-                        }catch (ActivityNotFoundException e){
-                            e.printStackTrace();
-                        }
-                    }
-
-                });
-                builder.setNegativeButton(buttonGallery, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id){
-                        //Вызываем стандартную галерею для выбора изображения с помощью Intent.ACTION_PICK:
-                        Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-                        //Тип получаемых объектов - image:
-                        photoPickerIntent.setType("image/*");
-                        photoPickerIntent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-
-                        //Запускаем переход с ожиданием обратного результата в виде информации об изображении:
-                        startActivityForResult(photoPickerIntent, REQUEST_IMAGE_GALLERY);
-
-                    }
-                });
-                builder.setCancelable(true);
-
-                builder.create();
-                builder.show();
-              /*  Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                startActivityForResult(Intent.createChooser(intent,"Select Picture"), 1);
-
-               */
             }
         });
 
@@ -116,6 +72,8 @@ public class CreateMessage extends AppCompatActivity {
              if(!setTheme.getText().toString().isEmpty() && !MainMessage.getText().toString().isEmpty()) {
                  intent.putExtra("theme", setTheme.getText().toString());
                  intent.putExtra("message", MainMessage.getText().toString());
+                 intent.putExtra("photo", selectedImage);
+
                //  Bitmap bitmap = ((BitmapDrawable) addedPhoto.getDrawable()).getBitmap();
                //  intent.putExtra("image", bitmap);
 
@@ -134,10 +92,10 @@ public class CreateMessage extends AppCompatActivity {
 
     private void showPictureDialog(){
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(this);
-        pictureDialog.setTitle("Select Action");
+        pictureDialog.setTitle("Выбор действия:");
         String[] pictureDialogItems = {
-                "Gallery",
-                "Camera" };
+                "Галерея",
+                "Камера" };
         pictureDialog.setItems(pictureDialogItems,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -192,59 +150,12 @@ public class CreateMessage extends AppCompatActivity {
 
             Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
             addedPhoto.setImageBitmap(thumbnail);
+            selectedImage = thumbnail;
           //  saveImage(thumbnail);
            Toast.makeText(CreateMessage.this, "Фото обновлено", Toast.LENGTH_SHORT).show();
             addedPhoto.setVisibility(View.VISIBLE);
         }
     }
 
-   /*
-    //Обрабатываем результат выбора в галерее:
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
-        super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
-
-        switch (requestCode) {
-            case REQUEST_IMAGE_GALLERY:
-                if (resultCode == RESULT_OK) {
-                    try {
-
-                        //Получаем URI изображения, преобразуем его в Bitmap
-                        //объект и отображаем в элементе ImageView нашего интерфейса:
-                       final ClipData images = imageReturnedIntent.getClipData();
-
-                        final Uri imageUri = imageReturnedIntent.getData();
-                        final InputStream imageStream = getContentResolver().openInputStream(imageUri);
-                        final InputStream imageStream = getContentResolver().openInputStream(imageUri);
-
-                        final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
-                        addedPhoto.setImageBitmap(selectedImage);
-
-                        //Снова делаем видимыми
-                        addedPhoto.setVisibility(View.VISIBLE);
-
-                      //  addedPhotosText.setText();
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                }
-          /*  case REQUEST_TAKE_PHOTO:
-                if (resultCode == RESULT_OK) {
-                    try {  Bundle extras = imageReturnedIntent.getExtras();
-                    Bitmap thumbnailBitmap = (Bitmap) extras.get("data");
-                    addedPhoto.setImageBitmap(thumbnailBitmap);
-
-                    addedPhoto.setVisibility(View.VISIBLE);
-
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-
-
-        }
-
-    }
-    */
 
 }

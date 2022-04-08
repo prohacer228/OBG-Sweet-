@@ -19,6 +19,9 @@ public class UserDataRegister extends AppCompatActivity {
     Button registerUserData;
     EditText name, surname, middleName, telephone, city, street, house, apartment;
 
+    //список юзеров
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,23 +36,45 @@ public class UserDataRegister extends AppCompatActivity {
         street = findViewById(R.id.userStreetRegister);
         middleName = findViewById(R.id.userMidNameRegister);
         apartment = findViewById(R.id.userApartRegister);
+        house = findViewById(R.id.userHouseRegister);
 
         registerUserData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //После рестирации данных, переход на логин активити
                 if(isEmptyFields()) {
+
                     Intent intent = new Intent(UserDataRegister.this, LoginActivity.class);
                     startActivity(intent);
 
-                    //Уничтожает активити с регистрацией, после перезода на страницу логина
+
+                    //Уничтожает активити с регистрацией, после перхода на страницу логина
                    // finish();
                 }
             }
         });
     }
 
+ /*   public void SetUserData(String username, String email, String password, String name,String surname, String middleName, String city, String street,
+                            String house, String apartment)
+    {
+        User user = new User();
+        user.username = username;
+        user.email = email;
+        user.password = password;
+        user.name = name;
+        user.surname = surname;
+        user.middleName = middleName;
+        user.city = city;
+        user.street = street;
+        user.house = house;
+        user.apartment = apartment;
 
+        users.add(user);
+
+    }
+
+*/
     boolean isEmptyFields()
     {
         //Поля не должны быть пустыми

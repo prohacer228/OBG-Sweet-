@@ -72,8 +72,6 @@ public class UserMainActivity extends AppCompatActivity {
 
         //Переход на активити о программе
         aboutProg = header.findViewById(R.id.text_abot_prog);
-        //Кнока креста, закрывающая панель
-        closeButton = findViewById(R.id.close_button_nav);
 
         aboutProg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,18 +80,6 @@ public class UserMainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        /*
-        closeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-             //   Intent intent = new Intent(UserMainActivity.this, SectionsFragment.class);
-            //    startActivity(intent);
-            }
-        });
-
-         */
     }
 
 
