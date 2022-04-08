@@ -35,4 +35,6 @@ public class UserProfileFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+    //TODO: добавить возможность изменять данные и сохранять их в бд
 }

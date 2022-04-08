@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class RegisterActivity extends AppCompatActivity {
     EditText username, email;
     EditText password, repeatPassword;
     TextView rulesProject;
+    CheckBox projectRules;
 
 
     @Override
@@ -31,7 +33,8 @@ public class RegisterActivity extends AppCompatActivity {
         password = findViewById(R.id.passwordSet);
         repeatPassword = findViewById(R.id.repeatPasswordRegister);
         email = findViewById(R.id.emailRegister);
-        rulesProject = findViewById(R.id.AgreementRulesCB);
+        rulesProject = findViewById(R.id.InvisibleRules);
+        projectRules = findViewById(R.id.AgreementRulesCB);
 
        RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,8 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-       //TODO: сделать переход на правила проекта отдельно от checkBox
-        rulesProject.setOnClickListener(new View.OnClickListener() {
+       rulesProject.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RegisterActivity.this, AboutActivity.class);
@@ -88,7 +90,12 @@ public class RegisterActivity extends AppCompatActivity {
         {
             Toast.makeText(RegisterActivity.this, "Заполните поля!", Toast.LENGTH_SHORT).show();
             return false;
-        }
+        } else
+            //TODO: Добавлена проеверка принятия правил проекта при регистрации
+            if(!projectRules.isChecked()){
+                Toast.makeText(RegisterActivity.this, "Необходимо принять правила проекта!", Toast.LENGTH_SHORT).show();
+                return false;
+            }
         //TODO: добавить проверку паролей, они должны совпадать
        /* else if(password.getText().toString() != repeatPassword.getText().toString())
         {
@@ -97,7 +104,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         */
-        //TODO: добавить проверку принятия правил проекта
+
         else {
             return true;
         }

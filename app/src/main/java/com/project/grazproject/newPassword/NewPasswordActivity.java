@@ -1,14 +1,12 @@
 package com.project.grazproject.newPassword;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.project.grazproject.R;
 
 public class NewPasswordActivity extends AppCompatActivity {
-
-    //TODO : добавить функционал изменения пароля
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
