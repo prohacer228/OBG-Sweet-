@@ -68,14 +68,12 @@ public class CreateMessage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CreateMessage.this, NewMessageDoneActivity.class);
+
                 //Передача текста темы на следующий экран
              if(!setTheme.getText().toString().isEmpty() && !MainMessage.getText().toString().isEmpty()) {
                  intent.putExtra("theme", setTheme.getText().toString());
                  intent.putExtra("message", MainMessage.getText().toString());
                  intent.putExtra("photo", selectedImage);
-
-               //  Bitmap bitmap = ((BitmapDrawable) addedPhoto.getDrawable()).getBitmap();
-               //  intent.putExtra("image", bitmap);
 
                  startActivity(intent);
              }
@@ -151,7 +149,6 @@ public class CreateMessage extends AppCompatActivity {
             Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
             addedPhoto.setImageBitmap(thumbnail);
             selectedImage = thumbnail;
-          //  saveImage(thumbnail);
            Toast.makeText(CreateMessage.this, "Фото обновлено", Toast.LENGTH_SHORT).show();
             addedPhoto.setVisibility(View.VISIBLE);
         }
