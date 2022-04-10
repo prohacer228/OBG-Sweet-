@@ -27,6 +27,7 @@ public class CreateMessage extends AppCompatActivity {
     private Button PostMessageButton;
     private EditText setTheme, MainMessage;
     private Bitmap selectedImage;
+    private ImageView addPhotoImage;
 
      //TODO: изменить показ фото на несколько фото
     // TODO: исправить добавление фото с камеры
@@ -46,6 +47,7 @@ public class CreateMessage extends AppCompatActivity {
 
         PostMessageButton = findViewById(R.id.PostMessageButton);
         photoDone = findViewById(R.id.Photos);
+        addPhotoImage = findViewById(R.id.addPhotoImage);
 
         //При загрузке скрываем надпись и фото
         addedPhoto.setVisibility(View.INVISIBLE);
@@ -53,16 +55,21 @@ public class CreateMessage extends AppCompatActivity {
         //Связываемся с нашей кнопкой Button:
         TextView PickImage =  findViewById(R.id.addPhotoButton);
 
+        addPhotoImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPictureDialog();
+
+            }
+        });
+
         //Настраиваем для нее обработчик нажатий OnClickListener:
         PickImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 showPictureDialog();
             }
         });
-
-
 
         PostMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,8 +92,6 @@ public class CreateMessage extends AppCompatActivity {
         });
 
     }
-
-
 
     private void showPictureDialog(){
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(this);

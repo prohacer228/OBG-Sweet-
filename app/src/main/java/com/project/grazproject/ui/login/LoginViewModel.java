@@ -4,12 +4,10 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import android.util.Patterns;
-
+import com.project.grazproject.R;
 import com.project.grazproject.data.LoginRepository;
 import com.project.grazproject.data.Result;
 import com.project.grazproject.data.model.LoggedInUser;
-import com.project.grazproject.R;
 
 public class LoginViewModel extends ViewModel {
 
@@ -64,7 +62,8 @@ public class LoginViewModel extends ViewModel {
         if (username.contains("@")) {
             return false;
           //  return Patterns.EMAIL_ADDRESS.matcher(username).matches();
-        } else {
+        }
+        else {
             return !username.trim().isEmpty();
         }
     }
@@ -72,6 +71,8 @@ public class LoginViewModel extends ViewModel {
     // A placeholder password validation check
     private boolean isPasswordValid(String password) {
         //пароль более 5 символов
+
         return password != null && password.trim().length() > 5;
     }
+
 }

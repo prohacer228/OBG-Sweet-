@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.project.grazproject.R;
+import com.project.grazproject.User.User;
 import com.project.grazproject.about.AboutActivity;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -21,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
     TextView rulesProject;
     CheckBox projectRules;
 
+   public  static User newUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,8 @@ public class RegisterActivity extends AppCompatActivity {
                       intent.putExtra("email", email.getText().toString());
                       intent.putExtra("password", password.getText().toString());
                   }
+                  newUser = CreateUser(username.getText().toString(), email.getText().toString(), password.getText().toString());
+
                   startActivity(intent);
                   //Уничтожает активити с регистрацией, после перезода на дальнейшую страницу
                 //  finish();
@@ -70,7 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-   /* public User CreateUser(String username, String email, String password)
+    public User CreateUser(String username, String email, String password)
     {
         User newUser = new User();
 
@@ -80,7 +84,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         return newUser;
     }
-    */
+
 
     boolean isEmptyFields()
     {
@@ -91,7 +95,6 @@ public class RegisterActivity extends AppCompatActivity {
             Toast.makeText(RegisterActivity.this, "Заполните поля!", Toast.LENGTH_SHORT).show();
             return false;
         } else
-            //TODO: Добавлена проеверка принятия правил проекта при регистрации
             if(!projectRules.isChecked()){
                 Toast.makeText(RegisterActivity.this, "Необходимо принять правила проекта!", Toast.LENGTH_SHORT).show();
                 return false;

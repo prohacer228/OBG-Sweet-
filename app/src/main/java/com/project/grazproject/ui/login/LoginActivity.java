@@ -32,8 +32,6 @@ public class LoginActivity extends AppCompatActivity {
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
-  //  public static List<User> users;
-
     EditText usernameEditText;
     EditText passwordEditText;
     Button loginButton;
@@ -41,9 +39,16 @@ public class LoginActivity extends AppCompatActivity {
     ProgressBar loadingProgressBar;
     TextView forgotPassword;
 
+   // public static List<User> users = new ArrayList<>();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Добавление трех стандартных юзеров
+        User.DefaultSettingsUser();
+        User.addSania();
+        User.addButterflyArtur();
 
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -57,8 +62,6 @@ public class LoginActivity extends AppCompatActivity {
        registerButton = binding.registerButtonLog;
        loadingProgressBar = binding.loading;
        forgotPassword = binding.forgotPassword;
-
-      //  forgotPassword = findViewById(R.id.forgotPassword);
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
             @Override
@@ -94,27 +97,6 @@ public class LoginActivity extends AppCompatActivity {
                 User loggedUser = new User();
                 loggedUser.username = usernameEditText.getText().toString();
                 loggedUser.password = passwordEditText.getText().toString();
-
-                /*
-                if(CheckUser(loggedUser))
-                {
-                    //Complete and destroy login activity once successful
-                    Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
-                    startActivity(intent);
-
-                    finish();
-                }
-                else {
-                    Toast.makeText(LoginActivity.this, "Пользователя не существует", Toast.LENGTH_SHORT).show();
-                }
-
-                 */
-
-                Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
-                startActivity(intent);
-
-                finish();
-
 
             }
         });
@@ -160,6 +142,17 @@ public class LoginActivity extends AppCompatActivity {
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
 
+                if(User.findUser(usernameEditText.getText().toString(), passwordEditText.getText().toString())) {
+                    Intent intent = new Intent(LoginActivity.this, UserMainActivity.class);
+                    startActivity(intent);
+
+                    finish();
+                }
+                else
+                {
+                    Toast.makeText(LoginActivity.this, "Недействительный пользователь", Toast.LENGTH_SHORT).show();
+                }
+
             }
 
         });
@@ -168,6 +161,7 @@ public class LoginActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
@@ -184,29 +178,14 @@ public class LoginActivity extends AppCompatActivity {
        });
     }
 
-
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
-        Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+      //  Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
 
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }
-
-    //переделать проверку на совпадение юзера
-   /* boolean checkUserBol;
-    public boolean CheckUser(User loggedUser)
-    {
-        for(int i =0;i<users.size(); i++) {
-            User user = users.get(i);
-            checkUserBol = user.username.contains(loggedUser.username);
-
-        }
-        return checkUserBol;
-    }
-
-    */
 }

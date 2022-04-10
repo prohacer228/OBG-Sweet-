@@ -35,7 +35,7 @@ public class FeedbackFragment extends Fragment {
         feedbackMessage = binding.FeedBackMessage;
 
         //TODO: почта, на которую высывается письмо
-        address = "ov.bakai@gmail.com";
+        address = "soznatGrazd@gmail.com";
         subject = "Сообщение от пользователя \"СознательныйГражданин\"";
 
         send.setOnClickListener(new View.OnClickListener() {

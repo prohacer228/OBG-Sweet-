@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.project.grazproject.R;
+import com.project.grazproject.User.User;
 import com.project.grazproject.ui.login.LoginActivity;
 
 public class UserDataRegister extends AppCompatActivity {
@@ -18,9 +19,6 @@ public class UserDataRegister extends AppCompatActivity {
 
     Button registerUserData;
     EditText name, surname, middleName, telephone, city, street, house, apartment;
-
-    //список юзеров
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +42,19 @@ public class UserDataRegister extends AppCompatActivity {
                 //После рестирации данных, переход на логин активити
                 if(isEmptyFields()) {
 
+                    String name1 = name.getText().toString();
+                    String surname1 = surname.getText().toString();
+                    String phone = telephone.getText().toString();
+                    String city1 = city.getText().toString();
+                    String street1 = street.getText().toString();
+                    String midName = middleName.getText().toString();
+                    String house1 = house.getText().toString();
+                    String apart = apartment.getText().toString();
+
+                    SetUserData(RegisterActivity.newUser, name1, surname1, midName, city1, street1, house1, apart, phone);
+
                     Intent intent = new Intent(UserDataRegister.this, LoginActivity.class);
                     startActivity(intent);
-
 
                     //Уничтожает активити с регистрацией, после перхода на страницу логина
                    // finish();
@@ -55,26 +63,56 @@ public class UserDataRegister extends AppCompatActivity {
         });
     }
 
- /*   public void SetUserData(String username, String email, String password, String name,String surname, String middleName, String city, String street,
-                            String house, String apartment)
+   public void SetUserData(User user, String name, String surname, String middleName, String city, String street,
+                           String house, String apartment, String phone)
     {
-        User user = new User();
-        user.username = username;
-        user.email = email;
-        user.password = password;
-        user.name = name;
-        user.surname = surname;
-        user.middleName = middleName;
-        user.city = city;
-        user.street = street;
-        user.house = house;
-        user.apartment = apartment;
+        if(!name.isEmpty()) {
+            user.name = name;
+        }
+        if(!surname.isEmpty()) {
+            user.surname = surname;
+        }
+        if(!middleName.isEmpty()) {
+            user.middleName = middleName;
+        }
+        else
+        {
+            user.phone = "Пусто";
+        }
+        if(!city.isEmpty()) {
+            user.city = city;
+        }else
+        {
+            user.city="Самара";
+        }
+        if(!street.isEmpty()) {
+            user.street = street;
+        }
+        if(!house.isEmpty()) {
+            user.house = house;
+        }
+        if(!apartment.isEmpty()) {
+            user.apartment = apartment;
+        }
+        else
+        {
+            user.phone = "Пусто";
+        }
+        if(!phone.isEmpty()) {
+            user.phone = phone;
+        }
 
-        users.add(user);
+
+        // LoginActivity.users.add(user);
+      //  users.add(user);
+
+        User.users.add(user);
+       // User.RegUser = user;
+        Toast.makeText(this, "Пользователь добавлен", Toast.LENGTH_SHORT).show();
 
     }
 
-*/
+
     boolean isEmptyFields()
     {
         //Поля не должны быть пустыми

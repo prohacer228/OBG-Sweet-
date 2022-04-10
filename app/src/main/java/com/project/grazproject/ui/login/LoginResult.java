@@ -28,4 +28,10 @@ class LoginResult {
     Integer getError() {
         return error;
     }
+
+    public void setError()
+    {
+        error = 1;
+    }
+
 }

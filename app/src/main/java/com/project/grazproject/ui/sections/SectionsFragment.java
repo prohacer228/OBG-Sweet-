@@ -1,5 +1,6 @@
 package com.project.grazproject.ui.sections;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,6 +24,7 @@ public class SectionsFragment extends Fragment {
     TextView sectionsText;
     TextView sectionParkingLink, sectionExpiredProducts;
 
+    @SuppressLint("SetTextI18n")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         SectionsViewModel sectionsViewModel =
@@ -67,6 +69,8 @@ public class SectionsFragment extends Fragment {
               //  intent.putExtra("Section", sectionExpiredProducts.getText().toString());
             }
         });
+
+
 
 
 
