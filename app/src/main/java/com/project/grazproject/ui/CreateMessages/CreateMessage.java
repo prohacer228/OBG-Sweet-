@@ -29,6 +29,8 @@ public class CreateMessage extends AppCompatActivity {
     private Bitmap selectedImage;
     private ImageView addPhotoImage;
 
+    private EditText addDataMessage;
+
      //TODO: изменить показ фото на несколько фото
     // TODO: исправить добавление фото с камеры
 
@@ -48,6 +50,7 @@ public class CreateMessage extends AppCompatActivity {
         PostMessageButton = findViewById(R.id.PostMessageButton);
         photoDone = findViewById(R.id.Photos);
         addPhotoImage = findViewById(R.id.addPhotoImage);
+        addDataMessage = findViewById(R.id.addDataMessage);
 
         //При загрузке скрываем надпись и фото
         addedPhoto.setVisibility(View.INVISIBLE);
@@ -80,6 +83,7 @@ public class CreateMessage extends AppCompatActivity {
              if(!setTheme.getText().toString().isEmpty() && !MainMessage.getText().toString().isEmpty()) {
                  intent.putExtra("theme", setTheme.getText().toString());
                  intent.putExtra("message", MainMessage.getText().toString());
+                 intent.putExtra("data", addDataMessage.getText().toString());
                  intent.putExtra("photo", selectedImage);
 
                  startActivity(intent);

@@ -10,7 +10,7 @@ public class MyMessagesViewModel extends ViewModel {
 
     public MyMessagesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Мои сообщения");
+        mText.setValue(" ");
     }
 
     public LiveData<String> getText() {

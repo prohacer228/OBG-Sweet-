@@ -21,4 +21,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.153" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myMessCard"
+        android:layout_width="367dp"
+        android:layout_height="255dp"
+        app:cardBackgroundColor="#E2EAD3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.245">
+
+        <EditText
+            android:id="@+id/MyMessTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D5CBCB"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="Ужасная продукция"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/MyMesMainMess"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/MessageTextMain"
+            android:inputType="textMultiLine"
+            android:text="Продукция оставляет желать лучшего"
+            android:translationY="40dp" />
+
+        <EditText
+            android:id="@+id/MyMessAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D5CBCB"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="ул. Мирная 64"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:translationY="165dp" />
+
+        <EditText
+            android:id="@+id/myData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D5CBCB"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text="2022-04-11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:translationY="210dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

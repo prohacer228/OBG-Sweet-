@@ -43,20 +43,19 @@
         android:id="@+id/PostMessageButton"
         android:layout_width="267dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="56dp"
         android:selectAllOnFocus="true"
         android:text="@string/PostMessage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPhotoButton" />
+        app:layout_constraintTop_toBottomOf="@+id/addPhotoButton"
+        app:layout_constraintVertical_bias="0.25" />
 
     <TextView
         android:id="@+id/addPhotoButton"
         android:layout_width="251dp"
         android:layout_height="61dp"
-        android:layout_marginBottom="68dp"
         android:gravity="center"
         android:text="@string/AddPhoto"
         android:textAlignment="center"
@@ -66,8 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MessageThemeSet"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.343" />
 
     <ImageView
         android:id="@+id/addPhotoImage"
@@ -78,13 +77,13 @@
         app:layout_constraintEnd_toStartOf="@+id/addPhotoButton"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MessageThemeSet"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.338" />
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="355dp"
-        android:layout_height="327dp"
+        android:layout_width="368dp"
+        android:layout_height="328dp"
         android:layout_marginTop="11dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,8 +98,8 @@
 
             <EditText
                 android:id="@+id/MessageMainText"
-                android:layout_width="357dp"
-                android:layout_height="215dp"
+                android:layout_width="match_parent"
+                android:layout_height="191dp"
                 android:layout_marginTop="11dp"
                 android:ems="10"
                 android:gravity="start|top"
@@ -109,10 +108,18 @@
                 android:maxLength="600"
                 android:textColorHint="#757575" />
 
+            <EditText
+                android:id="@+id/addDataMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/MessageDate"
+                android:inputType="date" />
+
             <ImageView
                 android:id="@+id/addPhotoImageNew"
-                android:layout_width="182dp"
-                android:layout_height="171dp"
+                android:layout_width="179dp"
+                android:layout_height="148dp"
 
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:adjustViewBounds="true"

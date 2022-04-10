@@ -32,10 +32,7 @@ import com.yandex.runtime.image.ImageProvider;
  * Note: When working on your projects, remember to request the required permissions.
  */
 public class MapsActivity extends Activity implements UserLocationObjectListener,GeoObjectTapListener, InputListener {
-    /**
-     * Replace "your_api_key" with a valid developer key.
-     * You can get it at the https://developer.tech.yandex.ru/ website.
-     */
+
     private final String MAPKIT_API_KEY = "af5de0ac-3857-4839-8579-e57e4f6b8983";
     //private final Point TARGET_LOCATION = new Point(59.945933, 30.320045);
     private final Point TARGET_LOCATION2 = new Point(53.229587, 50.200715);
@@ -91,9 +88,6 @@ public class MapsActivity extends Activity implements UserLocationObjectListener
             }
         });
     }
-
-
-
 
     @Override
     protected void onStop() {

@@ -41,7 +41,6 @@ public class SectionsFragment extends Fragment {
         sectionParkingLink = binding.sectionParking;
         sectionExpiredProducts =binding.sectionExpiredProducts;
 
-
         sectionParkingLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +50,9 @@ public class SectionsFragment extends Fragment {
                    которой уже будут осуществляться дальнейшие действия (создание сообщения)
                  */
                 //Здесь пока переход сразу на создание сообщения CreateMessage
+              //  Intent intent = new Intent(SectionsFragment.this.getActivity(), MapsActivity.class);
                 Intent intent = new Intent(SectionsFragment.this.getActivity(), MapsActivity.class);
+
                 startActivity(intent);
 
               //  intent.putExtra("Section", sectionParkingLink.getText().toString());
@@ -69,10 +70,6 @@ public class SectionsFragment extends Fragment {
               //  intent.putExtra("Section", sectionExpiredProducts.getText().toString());
             }
         });
-
-
-
-
 
         return root;
     }

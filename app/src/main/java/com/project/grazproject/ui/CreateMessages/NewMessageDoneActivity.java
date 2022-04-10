@@ -1,5 +1,6 @@
 package com.project.grazproject.ui.CreateMessages;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.project.grazproject.R;
+import com.project.grazproject.UserMainActivity;
+import com.project.grazproject.ui.myMessages.MyMessagesFragment;
 import com.project.grazproject.ui.sections.SectionsFragment;
 
 import java.io.FileOutputStream;
@@ -19,12 +22,12 @@ import java.io.IOException;
 
 public class NewMessageDoneActivity extends AppCompatActivity {
 
-    TextView finalThemeMessage, incidentAddress, incidentSection;
+    TextView finalThemeMessage, incidentAddress, incidentSection, messData;
     EditText setThemeMessage, mainMessageDone;
     ImageView photo, photoDone;
     View imageLayout;
 
-    FloatingActionButton downloadButton;
+    FloatingActionButton downloadButton, saveButton;
 
     private final static String FILE_NAME = "Report.txt";
 
@@ -42,25 +45,49 @@ public class NewMessageDoneActivity extends AppCompatActivity {
         incidentAddress = findViewById(R.id.message_done_address);
         incidentSection = findViewById(R.id.message_section_done);
 
+        messData = findViewById(R.id.messege_data_done);
+
         downloadButton = findViewById(R.id.downloadButton);
+        saveButton = findViewById(R.id.saveButton);
 
         //Получение аргументов с предыдущей страницы
         Bundle arguments = getIntent().getExtras();
         String theme = arguments.get("theme").toString();
         String message = arguments.get("message").toString();
         Bitmap picture = (Bitmap) arguments.get("photo");
+        String data = (String) arguments.get("data");
 
         //Установка темы и текста сообщения
         finalThemeMessage.setText(theme);
         mainMessageDone.setText(message);
         photo.setImageBitmap(picture);
         incidentSection.setText(SectionsFragment.section);
+        messData.setText(data);
 
 
         downloadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                saveText(v);
+            }
+        });
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               /* MyMessagesFragment.message = mainMessageDone.getText().toString();
+                MyMessagesFragment.theme = finalThemeMessage.getText().toString();
+                MyMessagesFragment.address = incidentAddress.getText().toString();
+
+                */
+
+                MyMessagesFragment.newMessDone();
+
+                Toast.makeText(NewMessageDoneActivity.this, "Сообщение создано", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(NewMessageDoneActivity.this, UserMainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

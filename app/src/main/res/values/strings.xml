@@ -137,5 +137,7 @@
     <string name="SaveOnDevice">Сохранить на устройство</string>
     <string name="button_plus">+</string>
     <string name="button_minus">-</string>
+    <string name="MessageDate">Дата происшествия</string>
+    <string name="MyProblem">Моя проблема</string>
 
 </resources>

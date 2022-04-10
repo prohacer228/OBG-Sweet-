@@ -18,25 +18,26 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/newMessageMain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.846" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/newMessageMain"
-        android:layout_width="377dp"
-        android:layout_height="480dp"
+        android:layout_width="384dp"
+        android:layout_height="521dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52">
 
         <EditText
             android:id="@+id/MessageThemeDone"
-            android:layout_width="177dp"
-            android:layout_height="162dp"
+            android:layout_width="180dp"
+            android:layout_height="156dp"
             android:ems="10"
             android:enabled="false"
             android:gravity="start|top"
@@ -53,8 +54,8 @@
 
         <ImageView
             android:id="@+id/Photos"
-            android:layout_width="187dp"
-            android:layout_height="160dp"
+            android:layout_width="193dp"
+            android:layout_height="156dp"
 
             android:adjustViewBounds="true"
             android:scaleType="fitStart"
@@ -122,6 +123,20 @@
             app:layout_constraintTop_toBottomOf="@+id/message_done_address"
             app:layout_constraintVertical_bias="0.0" />
 
+        <TextView
+            android:id="@+id/messege_data_done"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:hint="@string/MessageDate"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider7"
+            app:layout_constraintVertical_bias="0.027" />
+
         <View
             android:id="@+id/divider5"
             android:layout_width="375dp"
@@ -173,6 +188,19 @@
         app:layout_constraintTop_toBottomOf="@+id/newMessageMain"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/stat_sys_download" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.743"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newMessageMain"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

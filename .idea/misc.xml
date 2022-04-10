@@ -16,6 +16,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_maps.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_menu.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_new_map.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_new_message_done.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_new_password.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/activity_parking_section.xml" value="0.1838768115942029" />
@@ -31,12 +32,12 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/custom_layer.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/customization.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/driving.xml" value="0.1838768115942029" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_all_messages.xml" value="0.1911231884057971" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_all_messages.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_feedback.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_first.xml" value="0.12604166666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_gallery.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_home.xml" value="0.1911231884057971" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_my_messages.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_my_messages.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_notifications.xml" value="0.17798913043478262" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_project_rules.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/User/AndroidStudioProjects/GrazProject/app/src/main/res/layout/fragment_second.xml" value="0.12604166666666666" />

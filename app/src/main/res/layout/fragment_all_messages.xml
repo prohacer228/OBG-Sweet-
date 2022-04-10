@@ -21,4 +21,288 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.146" />
+
+    <ScrollView
+        android:layout_width="375dp"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                app:cardBackgroundColor="#B7DAD7">
+
+                <TextView
+                    android:id="@+id/messTheme1"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:hint="@string/MessageTheme"
+                    android:shadowColor="#836969"
+                    android:text="Стоит на переходе"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/messAddress1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/incident_adress"
+                    android:text="ул. Волочаевская 64"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="100dp" />
+
+                <TextView
+                    android:id="@+id/messData1"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:hint="@string/incident_adress"
+                    android:text="2022-04-11"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="140dp" />
+
+                <EditText
+                    android:id="@+id/mainMess1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Мужчина на лесусе стоит на переходе и мешает пройти людям"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="41dp" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="40dp" />
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="130dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:translationY="20dp"
+                app:cardBackgroundColor="#B7DAD7"
+                tools:layout_editor_absoluteX="-183dp"
+                tools:layout_editor_absoluteY="579dp">
+
+                <TextView
+                    android:id="@+id/messTheme2"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:hint="@string/MessageTheme"
+                    android:shadowColor="#836969"
+                    android:text="Крысы в овощях"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/messAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/incident_adress"
+                    android:text="ул. Каховская 82"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="100dp" />
+
+                <TextView
+                    android:id="@+id/messData2"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:hint="@string/incident_adress"
+                    android:text="2022-04-04"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="140dp" />
+
+                <EditText
+                    android:id="@+id/mainMess2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Это какой-то кошмар!!! Крысы бегают по всему магазину!!! Сделайте что-нибудь!!!"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="41dp" />
+
+                <View
+                    android:id="@+id/divider44"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="40dp" />
+
+                <View
+                    android:id="@+id/divider66"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="130dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:translationY="40dp"
+                app:cardBackgroundColor="#B7DAD7"
+                tools:layout_editor_absoluteX="-183dp"
+                tools:layout_editor_absoluteY="579dp">
+
+                <TextView
+                    android:id="@+id/messTheme3"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:hint="@string/MessageTheme"
+                    android:shadowColor="#836969"
+                    android:text="помидоры гнильё"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/messAddress3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/incident_adress"
+                    android:text="ул. Волочаевская 65"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="100dp" />
+
+                <TextView
+                    android:id="@+id/messData3"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:hint="@string/incident_adress"
+                    android:text="2022-04-11"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="140dp" />
+
+                <EditText
+                    android:id="@+id/mainMess3"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="bad bad bad"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="41dp" />
+
+                <View
+                    android:id="@+id/divider444"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="40dp" />
+
+                <View
+                    android:id="@+id/divider666"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="130dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:translationY="60dp"
+                app:cardBackgroundColor="#B7DAD7"
+                tools:layout_editor_absoluteX="-183dp"
+                tools:layout_editor_absoluteY="579dp">
+
+                <TextView
+                    android:id="@+id/messTheme4"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:hint="@string/MessageTheme"
+                    android:shadowColor="#836969"
+                    android:text="Ужасная продукция"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/messAddress4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/incident_adress"
+                    android:text="ул. Мирная 64"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="100dp" />
+
+                <TextView
+                    android:id="@+id/messData4"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:hint="@string/incident_adress"
+                    android:text="2022-04-11"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="140dp" />
+
+                <EditText
+                    android:id="@+id/mainMess4"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Продукция оставляет желать лучшего"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:translationY="41dp" />
+
+                <View
+                    android:id="@+id/divider4444"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="40dp" />
+
+                <View
+                    android:id="@+id/divider6666"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider"
+                    android:translationY="130dp" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
